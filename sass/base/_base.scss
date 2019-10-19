@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.fill-gradient-linear path {
+  fill: url(#linear);
+}
+
+.linear-stop1 {
+  stop-color: $color-primary-light;
+}
+
+.linear-stop2 {
+  stop-color: $color-primary-dark;
+}

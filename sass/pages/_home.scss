@@ -1,0 +1,35 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25em 0;
+  margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+    background-image: linear-gradient(
+    to right bottom, 
+    rgba($color-primary-light, 0.8), 
+    rgba($color-primary-dark, 0.8)),
+
+  url(https://firebasestorage.googleapis.com/v0/b/evdev-demos.appspot.com/o/nat-4.jpg?alt=media&token=9b7aec67-0f19-4d74-b35d-5e0268c6f2e6);
+  background-size: cover;
+  background-position: top;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  &>* {
+    transform: skewY(7deg);
+  }
+}
+
+.section-tours {
+    background-color: $color-grey-light-1;
+    padding: 25em 0 50rem 0;
+    margin-top: -10rem;
+}
+
+.section-stories {
+    background-color: $color-grey-light-1;
+    padding: 15em 0;
+    margin-top: -10rem;
+}
