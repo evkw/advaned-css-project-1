@@ -1,5 +1,6 @@
 import React from 'react';
 import Story from '../Components/Story';
+import HeadingSecondary from '../Components/HeadingSecondary';
 
 
 const Stories = props => {
@@ -25,11 +26,7 @@ const Stories = props => {
         <source src="https://firebasestorage.googleapis.com/v0/b/evdev-demos.appspot.com/o/video.webm?alt=media&token=ef43d575-06e2-4845-9027-975bb1cb9a27" type="video/webm" />
       </video>
     </div>
-      <div className="u-center-text u-margin-bottom-big">
-          <h2 className="heading-secondary"> 
-            We make people genuinely happy
-          </h2>
-        </div>
+     <HeadingSecondary text="We make people genuinely happy"/>
 
         {data.map(story => (
           <div className="row">

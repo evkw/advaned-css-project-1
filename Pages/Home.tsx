@@ -4,6 +4,7 @@ import About from '../Layouts/About';
 import Features from '../Layouts/Features';
 import Tours from '../Layouts/Tours';
 import Stories from '../Layouts/Stories';
+import Book from '../Layouts/Book';
 
 const Home: any = props => {
 
@@ -15,6 +16,7 @@ const Home: any = props => {
       <Features />
       <Tours />
       <Stories />
+      <Book />
     </main>
     </div>
   )

@@ -33,3 +33,24 @@
     margin-top: -10rem;
     position: relative;
 }
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.book {
+    background-image: linear-gradient(105deg, 
+                                    rgba($color-white, .9) 0%,
+                                    rgba($color-white, .9) 50%,
+                                    transparent 50%) ,
+                            url(https://firebasestorage.googleapis.com/v0/b/evdev-demos.appspot.com/o/nat-10.jpg?alt=media&token=9a290b03-a0c1-4838-87cb-de69109621f6);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}

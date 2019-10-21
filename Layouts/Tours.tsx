@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Components/Card';
+import HeadingSecondary from '../Components/HeadingSecondary';
 
 const Tours = props => {
 
@@ -25,11 +26,7 @@ const Tours = props => {
   ]
   return(
     <section className="section-tours">
-      <div className="u-center-text u-margin-bottom-big">
-          <h2 className="heading-secondary"> 
-            Most Popular tours
-          </h2>
-        </div>
+    <HeadingSecondary text=" Most Popular tours" />
 
         <div className="row">
         {tours.map(tour => {
