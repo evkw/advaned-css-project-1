@@ -7,10 +7,13 @@ import Stories from '../Layouts/Stories';
 import Book from '../Layouts/Book';
 import Footer from '../Layouts/Footer';
 
+import Navigation from '../Components/Navigation';
+
 const Home: any = props => {
 
   return (
     <div>
+      <Navigation/>
       <Header/>
       <main>
         <About />
