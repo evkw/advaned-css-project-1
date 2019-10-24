@@ -6,6 +6,7 @@ import Tours from '../Layouts/Tours';
 import Stories from '../Layouts/Stories';
 import Book from '../Layouts/Book';
 import Footer from '../Layouts/Footer';
+import Popup from '../Layouts/Popup';
 
 import Navigation from '../Components/Navigation';
 
@@ -18,11 +19,12 @@ const Home: any = props => {
       <main>
         <About />
         <Features />
-        <Tours />
+        <Tours id="section-tours"/>
         <Stories />
         <Book />
       </main>
       <Footer/>
+      <Popup id="popup"/>
     </div>
   )
 }

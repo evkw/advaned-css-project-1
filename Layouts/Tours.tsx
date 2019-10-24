@@ -25,7 +25,7 @@ const Tours = props => {
     }
   ]
   return(
-    <section className="section-tours">
+    <section className="section-tours" id={props.id}>
     <HeadingSecondary text=" Most Popular tours" />
 
         <div className="row">
