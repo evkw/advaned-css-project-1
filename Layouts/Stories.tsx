@@ -1,6 +1,7 @@
 import React from 'react';
 import Story from '../Components/Story';
 import HeadingSecondary from '../Components/HeadingSecondary';
+import BgVideo from '../Components/BgVideo';
 
 
 const Stories = props => {
@@ -18,14 +19,12 @@ const Stories = props => {
     }
   ]
 
+  const mp4 ="https://firebasestorage.googleapis.com/v0/b/evdev-demos.appspot.com/o/video.mp4?alt=media&token=b8cc8445-86b1-49fa-ac96-143d939f9fc8";
+  const webm ="https://firebasestorage.googleapis.com/v0/b/evdev-demos.appspot.com/o/video.webm?alt=media&token=ef43d575-06e2-4845-9027-975bb1cb9a27";
+
  return(
     <section className="section-stories">
-    <div className="bg-video">
-      <video className="bg-video__content" autoPlay muted loop>
-        <source src="https://firebasestorage.googleapis.com/v0/b/evdev-demos.appspot.com/o/video.mp4?alt=media&token=b8cc8445-86b1-49fa-ac96-143d939f9fc8" type="video/mp4" />
-        <source src="https://firebasestorage.googleapis.com/v0/b/evdev-demos.appspot.com/o/video.webm?alt=media&token=ef43d575-06e2-4845-9027-975bb1cb9a27" type="video/webm" />
-      </video>
-    </div>
+    <BgVideo mp4={mp4} webm={webm} />
      <HeadingSecondary text="We make people genuinely happy"/>
 
         {data.map(story => (
